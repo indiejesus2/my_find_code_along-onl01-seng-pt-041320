@@ -1,7 +1,7 @@
 require 'pry'
 
 def my_find(array)
-  array.each do |collection|
+  array.collect do |collection|
     return collection if yield(collection)
   end
 end
